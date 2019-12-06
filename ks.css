@@ -1,0 +1,15 @@
+header{
+  display box;
+  height : 50px;
+
+  padding : 0px;
+}
+header div{
+  margin : auto;
+  width : 320px;
+  border-top : 2px solid black;
+  border-bottom : 2px solid black;
+  text-align : center;
+  padding : 10px 0px;
+  font-size : 30px;
+}

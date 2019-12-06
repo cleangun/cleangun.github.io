@@ -5,16 +5,16 @@ header{
   text-align : center;
   background : black;
   height : 50px;
-
-}
-header img{
-
+  padding-bottom : 10px;
 }
 header div{
   display : inline;
-  margin-bottom : 10;
+  padding-bottom : 10;
   color : white;
+  font-size : 30px;
 }
+
+
 nav {
   margin : 10px;
 }
@@ -65,7 +65,7 @@ aside#left{
   margin : 0;
 }
 #left ul li{
-  background : /*#3f3f3f*/ black;
+  background : /*#3f3f3f*/ #FF7012;
   font-size : 15px;
   padding : 5px;
 }

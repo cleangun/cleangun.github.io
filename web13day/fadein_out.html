@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      #gallery {
+        width : 950px;
+        height : 190px;
+        background : #ff0;
+        border : 2px solid black;
+        border-radius : 15px;
+      }
+      ul{
+        list-style : none;
+      }
+      ul li{
+        display : inline;
+        float : left;
+        padding : 10px;
+      }
+      .bigPic{
+        position : absolute;
+        display : none;
+        left : 100px;
+        width : 400px;
+        height : 340px;
+      }
+      .smallpic{
+        border : 2px dotted red;
+        width : 200px;
+        height : 140px;
+      }
+      .Bicimg{
+        display : none;
+        position : absolute;
+      }
+    </style>
+    <script src = "http://code.jquery.com/jquery-3.4.1.js">
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        // $("img").click(function){
+        //$("img").fadeOut(1000);
+        // };
+        $("#s1").click(function(){
+          $("#big1").fadeIn(1000);
+        });
+        $("#big1").click(function(){
+          $("#big1").fadeOut(1000);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id = "gallery">
+      <ul>
+        <li>
+          <img src="dog1.png" id="s1" class = "smallpic">
+          <img src="dog2.jpg" id="big1" class = "bigPic">
+        </li>
+
+        <li>
+          <img src="cat1.jpg" id="s2" class = "smallpic">
+          <img src="cat2.jpg" id="big2" class = "bigPic">
+        </li>
+
+        <li>
+          <img src="rabbit1.jpg" id="s3" class = "smallpic">
+          <img src="rabbit2.jpg" id="big3" class = "bigPic">
+        </li>
+
+        <li>
+          <img src="horse1.jpg" id="s4" class = "smallpic">
+          <img src="horse2.jpg" id="big4" class = "bigPic">
+        </li>
+      </ul>
+      <!--
+      <img src="dog1.png" width = "200" height = "150"> <br>
+      <img src="dog1.png" id = "s1" width = "200" height = "150"> <br>
+      <img src="dog1.png" id = "big1" class = "Bicimg" width = "200" height = "150"> <br>
+    -->
+    </div>
+
+  </body>
+</html>

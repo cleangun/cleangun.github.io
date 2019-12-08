@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="wea.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+    <title></title>
+    <script src="http://code.jquery.com/jquery-3.4.1.js">
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#sec1").click(function(){
+          $("#pots").slideUp(1000);
+          setTimeout(function(){
+            $("#wea").slideToggle(1000);
+          },1000);
+        });
+        $("#sec2").click(function(){
+          $("#wea").slideUp(1000);
+          setTimeout(function(){
+            $("#pots").slideToggle(1000);
+          },1000);
+        });
+      });
+    </script>
+    <style media="screen">
+      body{
+        font-family: 'Nanum Gothic', sans-serif;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="setmiddle">
+      <header>
+        <div>WEAPON</div>
+      </header>
+      <section id="main">
+        <div class="subtitles">
+          <div id="sec1">
+            총기
+          </div>
+          <div id="sec2">
+            부착물
+          </div>
+        </div>
+        <div id="wea" class="content">
+          <table>
+            <tr>
+              <td><img src="weapon/kilo141.png" width = 400px;> </td>
+              <td>
+              <span>Kilo 141</span> <br>
+                <br>
+                실제 모델은 H&K 사의 HK433입니다 <br>
+                인체공학적으로 설계된 전자동 돌격 소총입니다. <br>
+                조작성이 뛰어나 안정적으로 사격할 수 있습니다.
+              </td>
+            </tr>
+            <tr>
+              <td><img src="weapon/FAL.png" width = 400px;></td>
+              <td>
+                <span>FAL</span> <br>
+                <br>
+                실제 모델은 FN 사의 FAL인데, <br>
+                어째 모델링이 캐나다 조병창의 C1A1과 비슷합니다.
+              </td>
+            </tr>
+            <tr>
+              <td><img src="weapon/M4A1.png" width = 400px;></td>
+              <td>
+                <span>M4A1</span> <br>
+                <br>
+                실제 모델은 M4A1이란 이름과 다르게 <br>
+                미 해군 해상전연구소 크레인 부문에서 제작된 Mk.18 Mod.1입니다. <br>
+                전자동 다목적 전투 소총으로 조준 사격 효율이 매우 좋습니다.
+              </td>
+            </tr>
+            <tr>
+              <td><img src="weapon/FR5.56.png" width = 400px;></td>
+              <td>
+                <span>FR 5.56</span> <br>
+                <br>
+                실제 모델은 생테티엔 조병창(현 넥스터 시스템즈)의 <br>
+                 FAMAS F1에 핸드가드 하부와 캐링핸들 상부에 <br>
+                  피카티니 레일 마운트를 장비한 모델입니다. <br>
+                  3점사 불펍 전투 소총입니다. <br>
+                   점사를 활용하면 장거리에서도 엄청난 살상력을 발휘합니다.
+              </td>
+            </tr>
+            <tr>
+              <td> 운영자의 시간상의 문제로 </td>
+              <td>더이상 제작할 수 없게 되었습니다, 죄송합니다</td>
+            </tr>
+          </table>
+        </div>
+        <div id="pots" class="content">
+          <div>
+            시간상의 문제로 <br> 컨텐츠가 존재하지 않습니다.
+            <br>
+            죄송합니다.
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

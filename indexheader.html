@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="indexheader.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    #main{
+      font-family: 'Nanum Gothic', sans-serif;
+    }
+    </style>
+    <script src="http://code.jquery.com/jquery-3.4.1.js">
+    </script>
+    <script type="text/javascript">
+    var img1 = document.getElementById("img1");
+    var img2 = document.getElementById("img2");
+    var img3 = document.getElementById("img3");
+      $(document).ready(function(){
+        var i = 0;
+        $(".backimg").click(function(){
+          if(i==0){
+            $("#img1").fadeOut(1000);
+            $("#img2").fadeIn(1000);
+          }
+          if(i==1){
+            $("#img2").fadeOut(1000);
+            $("#img3").fadeIn(1000);
+          }
+          if(i==2){
+            $("#img3").fadeOut(1000);
+            $("#img1").fadeIn(1000);
+            i = -1;
+          }
+          i++;
+        });
+        var t=0;
+        $("#enjoy").click(function(){
+          if(t==0){
+            $("#enjoy p").fadeOut(1000);
+            $(this).animate({left : "-=425"},1000);
+            $(this).animate({width : "+=850"},1000);
+            $(this).animate({height : "+=250"},1000);
+            $(".texttab").fadeIn(3000);
+          }
+          else if(t==1){
+            $(".texttab").fadeOut(500);
+            $(this).animate({height : "-=250"},1000);
+            $(this).animate({width : "-=850"},1000);
+            $(this).animate({left : "+=425"},1000);
+            $("#enjoy p").fadeIn(4000);
+            t = -1;
+          }
+          t++;
+        });
+
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      Modern Warfare Image
+    </header>
+    <section id="main">
+      <section id="dpimg">
+        <ul>
+          <li class="backimg">
+            <img id="img1" src="img/turnimg1.jpg" alt="">
+          </li>
+          <li class="backimg">
+            <img id="img2" src="img/turnimg2.jpg" alt="">
+          </li>
+          <li class="backimg">
+            <img id="img3" src="img/turnimg3.jpg" alt="">
+          </li>
+        </ul>
+      </section>
+      <section id="enjoy">
+        <p>Click here</p>
+        <div style="display: none;"class="texttab">
+          지금 콜오브듀티에 접속하여 <br>
+          아군을 구하고 <br>
+          적들을 압도하여 <br>
+          승리를 쟁취하세요 <br>
+          <div class="button">
+            <a href="https://www.callofduty.com/ko/" target="_blank">모던워페어 리부트＞</a>
+          </div>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>

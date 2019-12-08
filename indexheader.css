@@ -1,0 +1,103 @@
+#main{
+  display : inline-block;
+  padding : 10px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+
+}
+header{
+  display: inline-block;
+
+  width : 950px;
+  text-align : center;
+  font-size : 35px;
+  /* border-bottom : 1.5px solid black; */
+  margin-bottom : 10px;
+}
+
+#dpimg{
+  position : relative;
+  width : 100%;
+}
+#dpimg *{
+  padding : 0;
+  margin : 0;
+}
+#dpimg ul{
+  list-style: none;
+  width : 950px; height :550px;
+  position : relative;
+  left : 0, top : 0;
+  overflow : hidden;
+}
+#dpimg ul li{
+  position : relative;
+  cursor : pointer;
+}
+#dpimg ul li #img1{
+  position : absolute;
+  left : 0px ; top : 0px; right : 0px; bottom : 0px;
+  width : 100%;
+  text-align : center;
+}
+#dpimg ul li #img2{
+  position : absolute;
+  left : 0px ; top : 0px; right : 0px; bottom : 0px;
+  /* left : 100% ; top : 0px; right : -100%; bottom : 0px; */
+  width : 100%;
+  text-align : center;
+  display : none;
+}
+#dpimg ul li #img3{
+  position : absolute;
+  left : 0px ; top : 0px; right : 0px; bottom : 0px;
+  /* left : 200% ; top : 0px; right : -200%; bottom : 0px; */
+  width : 100%;
+  text-align : center;
+  display : none;
+}
+
+
+#enjoy{
+  position : relative;
+  background : #232323;
+  display : inline-block;
+  left : 425px;
+  width : 100px;
+  height : 100px;
+}
+#enjoy p{
+  color : white;
+  position : relative;
+  text-align:center;
+  top : 25%;
+}
+#enjoy .texttab{
+  position : relative;
+  top : 10%;
+  width : 100%;
+  display : inline-block;
+
+  font-size : 25px;
+  letter-spacing: 2px;
+  line-height : 45px;
+  color : white;
+  text-align : center;
+
+}
+#enjoy .texttab .button{
+  margin-top : 10px;
+  display : inline-block;
+  background : #FFBB00;
+  border-radius : 2px;
+  padding-left : 10px;
+  padding-right : 10px;
+  cursor : pointer;
+}
+#enjoy .texttab .button a{
+  text-decoration: none;
+  color : white;
+}
+#enjoy .texttab .button a:hover{
+  text-shadow: 1px 1px 1px black;
+}

@@ -1,0 +1,46 @@
+body {
+  /* background : #EDA900; */
+  /* color : white; */
+}
+header{
+  height : 50px;
+  padding : 0px;
+  margin : 25px 0px;
+  margin-bottom : 50px;
+  text-align : center;
+}
+header div{
+  margin-left: 250px;
+  width : 450px;
+  /* border-top : 2px solid black; */
+  border-bottom : 2px solid black;
+  text-align : center;
+  padding : 10px 0px;
+  font-size : 35px;
+  letter-spacing: 5px;
+}
+
+#main {
+  padding : 10px;
+  background-color: #989898;
+}
+#main .subtitle{
+  font-size : 18px;
+  display : inline-block;
+  padding : 5px;
+  color : white;
+}
+#main .subtitle:hover{
+  background : #EDA900;
+  cursor :pointer;
+}
+#main .content{
+  width : 600px;
+  border : 2px solid black;
+  box-shadow: 1px 1px 1px;
+  padding : 10px;
+  letter-spacing : 1px;
+  line-height: 30px;
+  color : black;
+  background : white;
+}
